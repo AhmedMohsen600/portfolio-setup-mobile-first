@@ -1,12 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello-Microverse
+# Portfolio: setup and mobile first
 
-> This is just a simple project under the supervision of the Microverse platform that tests how descriptive our repo instruction (pull requests description, readme file), also Linters were installed in the project to check for internal code errors and make the code as clean as possible.
-
-# Project Name
-
-> Portfolio: setup and mobile first
+> This is just a simple project under the supervision of the Microverse platform that tests how descriptive our repo instruction (pull requests description, readme file, html & css), also Linters were installed in the project to check for internal code errors and make the code as clean as possible.
 
 ## Built With
 
@@ -51,7 +47,4 @@ Give a :star:️ if you like this project!
 
 ## :memo: License
 
-You can freely use this project for ethical use and educational purposes.
-GitHubGitHub
-AhmedMohsen600 - Overview
-AhmedMohsen600 has 34 repositories available. Follow their code on GitHub.
+This project is [MIT](./LICENSE) licensed.

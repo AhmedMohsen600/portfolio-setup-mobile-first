@@ -12,15 +12,19 @@ body {
   justify-content: center;
   margin: auto;
   width: 375px;
-  height: 90vh;
+  min-height: 90vh;
+  background: #e5e5e5;
 }
 
 header {
-  width: 100%;
+  width: 375px;
+  min-height: 7vh;
+  display: flex;
+  background-color: #fff;
 }
 
 nav {
-  width: 87%;
+  width: 93%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -44,8 +48,52 @@ nav {
   background: #6070ff;
 }
 
-/* styling hero section */
+/* hero styling */
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  background: url("./imgs/background.png") center / contain no-repeat;
+  width: 375px;
+  height: 596px;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  border-bottom-left-radius: 70px;
+  background-color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  max-width: 240px;
+  color: #172b4d;
+}
+
+.about-me {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.connect {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #7f8cff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* styling tonic section */
+.tonic {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -58,7 +106,7 @@ nav {
 }
 
 /* title style */
-h1 {
+h2 {
   color: #172b4d;
   font-weight: 700;
 }
