@@ -43,15 +43,15 @@ nav {
   font-weight: bold;
   background: #6070ff;
 }
+
 /* styling hero section */
 .hero {
   margin-top: 20px;
-
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 16px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   width: 327px;
@@ -62,6 +62,7 @@ h1 {
   color: #172b4d;
   font-weight: 700;
 }
+
 /* image styling */
 .image {
   width: 295px;
