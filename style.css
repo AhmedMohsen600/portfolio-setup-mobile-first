@@ -242,10 +242,12 @@ p {
   gap: 36px;
 }
 
-.languages {
+.languages,
+.framewroks,
+.some-skill {
   display: flex;
-  flex-direction: column;
-  gap: 36px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .lang-group {
@@ -292,4 +294,9 @@ h6 {
   border-bottom: 1px solid #dfe1e6;
   padding: 12px;
   height: 60px;
+}
+
+.arrow {
+  object-fit: contain;
+  width: 14px;
 }
