@@ -16,11 +16,13 @@ body {
   background: #e5e5e5;
 }
 
+/* navbar */
 header {
   width: 375px;
   min-height: 7vh;
   display: flex;
   background-color: #fff;
+  margin-top: 50px;
 }
 
 nav {
@@ -62,6 +64,7 @@ nav {
   border: 1px solid #dfe1e6;
   border-bottom-left-radius: 70px;
   background-color: #fff;
+  margin-bottom: 114px;
 }
 
 h1 {
@@ -70,6 +73,10 @@ h1 {
   line-height: 52px;
   max-width: 240px;
   color: #172b4d;
+}
+
+li {
+  list-style: none;
 }
 
 .about-me {
@@ -94,7 +101,7 @@ h1 {
 
 /* styling tonic section */
 .tonic {
-  margin-top: 20px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -109,6 +116,8 @@ h1 {
 h2 {
   color: #172b4d;
   font-weight: 700;
+  max-width: 200px;
+  font-size: 32px;
 }
 
 /* image styling */
@@ -116,7 +125,10 @@ h2 {
   width: 295px;
   height: 220px;
   border-radius: 8px;
-  background: url("./imgs/woman.png") center / cover no-repeat;
+}
+
+img {
+  object-fit: cover;
 }
 
 .group {
@@ -175,6 +187,7 @@ p {
   font-size: 12px;
   font-weight: 500;
   color: #6070ff;
+  list-style: none;
 }
 
 .view-project {
@@ -197,4 +210,92 @@ p {
 .view-project:hover {
   background-color: #6070ff;
   color: white;
+}
+
+.works-section {
+  display: grid;
+  row-gap: 88px;
+}
+
+.about-section {
+  margin: 114px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  width: 375px;
+  padding: 16px;
+  padding-top: 114px;
+  border: 1px solid #dfe1e6;
+  border-top-left-radius: 70px;
+  background-color: #fff;
+}
+
+.about-self {
+  font-size: 40px;
+}
+
+.main-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.languages,
+.framewroks,
+.some-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lang {
+  width: 303px;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+}
+
+.resume {
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.framewroks {
+  padding: 12px;
+  border-bottom: 1px solid #dfe1e6;
+  height: 60px;
+}
+
+.some-skill {
+  border-bottom: 1px solid #dfe1e6;
+  padding: 12px;
+  height: 60px;
+}
+
+.arrow {
+  object-fit: contain;
 }
