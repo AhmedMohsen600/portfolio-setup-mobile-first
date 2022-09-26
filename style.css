@@ -173,14 +173,12 @@ p {
 .skills {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .btn-skill {
+  float: right;
   border: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
@@ -251,9 +249,8 @@ p {
 }
 
 .lang-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  float: right;
+  margin-right: 12px;
 }
 
 .lang {
