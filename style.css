@@ -389,14 +389,15 @@ textarea::placeholder {
   transition: 0.4s;
 }
 
+.submit:disabled {
+  opacity: 0.5;
+}
+
 .submit:enabled:active {
   background-color: rgb(111, 0, 255);
   color: white;
 }
 
-.submit:disabled {
-  opacity: 0.5;
-}
 .black-line {
   width: 134px;
   height: 5px;
