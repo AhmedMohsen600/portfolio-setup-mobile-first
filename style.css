@@ -296,3 +296,94 @@ h6 {
 .arrow {
   object-fit: contain;
 }
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/imgs/contact-bg.png") 101% / contain no-repeat #6070ff;
+  gap: 70px;
+  width: 375px;
+  height: 779px;
+  padding: 32px;
+  border: 1px solid transparent;
+  border-top-left-radius: 90px;
+}
+
+.contact-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  max-width: 100%;
+}
+
+.contact-desc {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 330px;
+  color: #ebebff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #b3bac5;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-weight: 400;
+}
+
+textarea::placeholder {
+  color: #b3bac5;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit {
+  color: #6070ff;
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 8px;
+  align-self: flex-start;
+  border: 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  width: 140px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #ebebff;
+  transition: 0.4s;
+}
