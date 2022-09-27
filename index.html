@@ -189,7 +189,7 @@
           <ul>
             <li class="framewroks">
               <h4>frameworks</h4>
-              <img class="arrow" src="./imgs/arrow-left.png" alt="arrow">
+              <img class="arrow" src="./imgs/arrow-left.png"  alt="arrow">
             </li>
             <li class="some-skill">
               <h4>skills</h4>
@@ -200,13 +200,14 @@
     </section>
     <section>
       <form action="https://formspree.io/f/xqkjqjeq" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="email">
+         <label>
+          <input type="input" required maxlength="30" name="email">
         </label>
         <label>
-          Your message:
-          <textarea name="message"></textarea>
+          <input type="email" required name="email">
+        </label>
+        <label>
+        <textarea required name="message"></textarea>
         </label>
         <!-- your other form fields go here -->
         <button type="submit">Send</button>
