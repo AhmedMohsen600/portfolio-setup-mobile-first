@@ -305,10 +305,10 @@ h6 {
   background: url("/imgs/contact-bg.png") 101% / contain no-repeat #6070ff;
   gap: 70px;
   width: 375px;
-  height: 779px;
-  padding: 32px;
+  padding: 16px;
   border: 1px solid transparent;
   border-top-left-radius: 90px;
+  margin-bottom: 20px;
 }
 
 .contact-group {
@@ -318,6 +318,7 @@ h6 {
   text-align: center;
   gap: 12px;
   flex-direction: column;
+  margin-top: 70px;
 }
 
 .contact-title {
@@ -386,4 +387,21 @@ textarea::placeholder {
 .submit:hover {
   background: #ebebff;
   transition: 0.4s;
+}
+
+.submit:enabled:active {
+  background-color: rgb(111, 0, 255);
+  color: white;
+}
+
+.submit:disabled {
+  opacity: 0.5;
+}
+.black-line {
+  width: 134px;
+  height: 5px;
+  align-self: center;
+  margin-top: 12px;
+  background: #0d151e;
+  border-radius: 10px;
 }
