@@ -18,6 +18,11 @@
     <header>
       <nav class="header">
         <img src="./imgs/logo.png" alt="logo" />
+        <ul class="links-holder">
+          <li class="link"><a href="#">Portoflio</a></li>
+          <li class="link"><a href="#">About</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+        </ul>
         <div class="burger-menu">
           <span class="line"></span>
           <span class="line"></span>
@@ -27,46 +32,49 @@
     </header>
     <main>
       <section class="hero">
-        <h1>I'm ahmed glad to see you!</h1>
-        <p class="about-me">
-          I’m a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <a class="connect" href="#">let's connect</a>
-        <ul class="social-icons">
-          <li>
-            <a href="#"
-              ><img class="icon" src="./imgs/twitter.svg" alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./imgs/linked-in.svg" alt="linked-in" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./imgs/just-m.svg" alt="just-m" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./imgs/github.svg" alt="github" />
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              ><img class="icon" src="./imgs/finger.svg" alt="finger" />
-            </a>
-          </li>
-        </ul>
+        <div>
+          <h1>I'm Ahmed Glad to see you!</h1>
+          <p class="about-me">
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <a class="connect" href="#">let's connect</a>
+          <ul class="social-icons">
+            <li>
+              <a href="#"
+                ><img class="icon" src="./imgs/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./imgs/linked-in.svg" alt="linked-in" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./imgs/just-m.svg" alt="just-m" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./imgs/github.svg" alt="github" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="icon" src="./imgs/finger.svg" alt="finger" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="works-section">
-        <div class="tonic">
+        <div class="tonic order1">
           <div class="image">
-            <img src="./imgs/tonic2.png" alt="work-img" />
+            <img class="mobile-img" src="./imgs/tonic2.png" alt="work-img" />
+            <img class="desktop-img" src="./imgs/order3.png" alt="work-img" />
           </div>
           <div class="group">
             <h2>Tonic</h2>
@@ -77,21 +85,22 @@
               <div class="dot"></div>
               <span class="tag">2022</span>
             </div>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="skills">
+              <li class="btn-skill">html</li>
+              <li class="btn-skill">css</li>
+              <li class="btn-skill">javaScript</li>
+            </ul>
+            <button class="view-project">See project</button>
           </div>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="skills">
-            <li class="btn-skill">html</li>
-            <li class="btn-skill">css</li>
-            <li class="btn-skill">javaScript</li>
-          </ul>
-          <button class="view-project">See project</button>
         </div>
-        <div class="tonic">
+        <div class="tonic order2">
           <div class="image">
-            <img src="./imgs/tonic3.png" alt="work-img" />
+            <img class="mobile-img" src="./imgs/tonic3.png" alt="work-img" />
+            <img class="desktop-img" src="./imgs/order4.png" alt="work-img" />
           </div>
           <div class="group">
             <h2>Multi-Post Stories</h2>
@@ -102,21 +111,23 @@
               <div class="dot"></div>
               <span class="tag">2022</span>
             </div>
+            <p>
+              Experimental content creation feature that allows users to add to
+              an existing story over the course of a day without spamming their
+              friends.
+            </p>
+            <ul class="skills">
+              <li class="btn-skill">html</li>
+              <li class="btn-skill">css</li>
+              <li class="btn-skill">javaScript</li>
+            </ul>
+            <button class="view-project">See project</button>
           </div>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="skills">
-            <li class="btn-skill">html</li>
-            <li class="btn-skill">css</li>
-            <li class="btn-skill">javaScript</li>
-          </ul>
-          <button class="view-project">See project</button>
         </div>
-        <div class="tonic">
+        <div class="tonic order3">
           <div class="image">
-            <img src="./imgs/woman.png" alt="work-img" />
+            <img class="mobile-img" src="./imgs/woman.png" alt="work-img" />
+            <img class="desktop-img" src="./imgs/order1.png" alt="work-img" />
           </div>
           <div class="group">
             <h2>Tonic</h2>
@@ -127,21 +138,23 @@
               <div class="dot"></div>
               <span class="tag">2022</span>
             </div>
+            <p>
+              Exploring the future of media in Facebook's first Virtual Reality
+              app; a place to discover and enjoy 360 photos and videos on Gear
+              VR.
+            </p>
+            <ul class="skills">
+              <li class="btn-skill">html</li>
+              <li class="btn-skill">css</li>
+              <li class="btn-skill">javaScript</li>
+            </ul>
+            <button class="view-project">See project</button>
           </div>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="skills">
-            <li class="btn-skill">html</li>
-            <li class="btn-skill">css</li>
-            <li class="btn-skill">javaScript</li>
-          </ul>
-          <button class="view-project">See project</button>
         </div>
-        <div class="tonic">
+        <div class="tonic order4">
           <div class="image">
-            <img src="./imgs/tonic4.png" alt="work-img" />
+            <img class="mobile-img" src="./imgs/tonic4.png" alt="work-img" />
+            <img class="desktop-img" src="./imgs/order2.png" alt="work-img" />
           </div>
           <div class="group">
             <h2>Multi-Post Stories</h2>
@@ -152,56 +165,58 @@
               <div class="dot"></div>
               <span class="tag">2022</span>
             </div>
+            <p>
+              A smart assistant to make driving more safe, efficient, and fun by
+              unlocking your most expensive computer: your car.
+            </p>
+            <ul class="skills">
+              <li class="btn-skill">html</li>
+              <li class="btn-skill">css</li>
+              <li class="btn-skill">javaScript</li>
+            </ul>
+            <button class="view-project">See project</button>
           </div>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="skills">
-            <li class="btn-skill">html</li>
-            <li class="btn-skill">css</li>
-            <li class="btn-skill">javaScript</li>
-          </ul>
-          <button class="view-project">See project</button>
         </div>
       </section>
       <section class="about-section">
-        <h2 class="about-self">About Myself</h2>
-        <p class="about-me">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <a class="connect" href="#">let's connect</a>
-        <ul class="social-icons">
-          <li>
-            <a href="#"
-              ><img class="icon" src="./imgs/twitter.svg" alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./imgs/linked-in.svg" alt="linked-in" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./imgs/just-m.svg" alt="just-m" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./imgs/github.svg" alt="github" />
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              ><img class="icon" src="./imgs/finger.svg" alt="finger" />
-            </a>
-          </li>
-        </ul>
-        <button class="view-project resume">Get my resume</button>
+        <div class="info">
+          <h2 class="about-self">About Myself</h2>
+          <p class="about-me">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <a class="connect" href="#">let's connect</a>
+          <ul class="social-icons">
+            <li>
+              <a href="#"
+                ><img class="icon" src="./imgs/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./imgs/linked-in.svg" alt="linked-in" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./imgs/just-m.svg" alt="just-m" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./imgs/github.svg" alt="github" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="icon" src="./imgs/finger.svg" alt="finger" />
+              </a>
+            </li>
+          </ul>
+          <button class="view-project resume">Get my resume</button>
+        </div>
         <section class="main-skills">
           <div class="languages">
             <h4>languages</h4>
@@ -240,45 +255,47 @@
           </ul>
         </section>
       </section>
-      <section class="contact-form">
-        <div class="contact-group">
-          <h2 class="contact-title">Contact me</h2>
-          <p class="contact-desc">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
-        </div>
-        <form action="https://formspree.io/f/xqkjqjeq" method="POST">
-          <label>
-            <input
-              type="text"
-              placeholder="Write your name"
-              required
-              maxlength="30"
-              name="name"
-            />
-          </label>
-          <label>
-            <input
-              type="email"
-              placeholder="Write your email here"
-              required
-              name="email"
-            />
-          </label>
-          <label>
-            <textarea
-              placeholder="Write your message here"
-              rows="10"
-              required
-              name="message"
-              maxlength="500"
-            ></textarea>
-          </label>
-          <button class="submit" type="submit">Get It Touch</button>
-          <div class="black-line"></div>
-        </form>
+      <section class="footer-holder">
+        <section class="contact-form">
+          <div class="contact-group">
+            <h2 class="contact-title">Contact me</h2>
+            <p class="contact-desc">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+          </div>
+          <form action="https://formspree.io/f/xqkjqjeq" method="POST">
+            <label>
+              <input
+                type="text"
+                placeholder="Write your name"
+                required
+                maxlength="30"
+                name="name"
+              />
+            </label>
+            <label>
+              <input
+                type="email"
+                placeholder="Write your email here"
+                required
+                name="email"
+              />
+            </label>
+            <label>
+              <textarea
+                placeholder="Write your message here"
+                rows="10"
+                required
+                name="message"
+                maxlength="500"
+              ></textarea>
+            </label>
+            <button class="submit" type="submit">Get It Touch</button>
+            <div class="black-line"></div>
+          </form>
+        </section>
       </section>
     </main>
   </body>
