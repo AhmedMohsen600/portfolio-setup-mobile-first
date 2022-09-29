@@ -22,6 +22,16 @@ li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease;
+  transform-origin: top;
+}
+
 /* desktop version  */
 @media (min-width: 768px) {
   /* nav style */
@@ -65,8 +75,8 @@ li {
     background: url("./imgs/header-bg.png") center / contain no-repeat;
     background-color: #fff;
     margin-bottom: 114px;
-    padding: 180px 0;
     border-bottom-left-radius: 100px;
+    min-height: 90vh;
   }
 
   .hero div {
@@ -133,6 +143,11 @@ li {
   .image img {
     width: 100%;
     object-fit: cover;
+    transition: all 0.3s ease;
+  }
+
+  .image img:hover {
+    transform: scale(1.1);
   }
 
   .group {
@@ -363,6 +378,11 @@ li {
     font-weight: 400;
     max-width: 500px;
     color: #ebebff;
+    transition: all 0.5s;
+  }
+
+  .contact-desc:hover {
+    transform: translateX(10px);
   }
 
   form {
@@ -560,6 +580,7 @@ li {
     width: 295px;
     height: 220px;
     border-radius: 8px;
+    transform: scale(1.1);
   }
 
   img {
