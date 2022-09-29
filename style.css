@@ -22,6 +22,16 @@ li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease;
+  transform-origin: top;
+}
+
 /* desktop version  */
 @media (min-width: 768px) {
   /* nav style */
@@ -65,8 +75,8 @@ li {
     background: url("./imgs/header-bg.png") center / contain no-repeat;
     background-color: #fff;
     margin-bottom: 114px;
-    padding: 180px 0;
     border-bottom-left-radius: 100px;
+    min-height: 90vh;
   }
 
   .hero div {
