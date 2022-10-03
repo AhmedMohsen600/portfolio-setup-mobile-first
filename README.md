@@ -48,7 +48,3 @@ Give a :star:️ if you like this project!
 ## :memo: License
 
 This project is [MIT](./LICENSE) licensed.
-
-## Project online version
-
-- https://ahmedmohsen600.github.io/portfolio-setup-mobile-first/
