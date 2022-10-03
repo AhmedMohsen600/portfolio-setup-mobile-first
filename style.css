@@ -128,6 +128,7 @@ button {
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 22px;
     padding: 32px;
     background: #fff;
@@ -155,8 +156,8 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 24px;
     padding: 24px;
+    align-self: flex-start;
   }
 
   .tags-holder {
