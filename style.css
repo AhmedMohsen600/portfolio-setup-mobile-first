@@ -433,11 +433,11 @@ button {
     line-height: 24px;
     width: 140px;
     cursor: pointer;
+    transition: 0.4s;
   }
 
   .submit:hover {
     background: #ebebff;
-    transition: 0.4s;
   }
 
   .submit:disabled {
