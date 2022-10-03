@@ -843,7 +843,7 @@ button {
     line-height: 24px;
     width: 140px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: all 0.3s;
   }
 
   .submit:hover {
