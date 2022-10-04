@@ -37,6 +37,7 @@ button {
   gap: 8px;
   flex-direction: column;
 }
+
 .input-holder label {
   color: rgba(255, 255, 255, 0.845);
 }
