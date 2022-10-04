@@ -32,6 +32,15 @@ button {
   transform-origin: top;
 }
 
+.input-holder {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.input-holder label {
+  color: rgba(255, 255, 255, 0.845);
+}
+
 /* desktop version  */
 @media (min-width: 768px) {
   /* nav style */
@@ -109,7 +118,7 @@ button {
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    color: #7f8cff;
+    color: #4653c8;
   }
 
   .social-icons {
@@ -175,7 +184,7 @@ button {
   }
 
   .tag {
-    color: #7a869a;
+    color: #70757c;
     font-size: 13px;
     font-weight: 600;
   }
@@ -208,7 +217,7 @@ button {
     border-radius: 8px;
     font-size: 12px;
     font-weight: 500;
-    color: #6070ff;
+    color: #6070ffec;
     list-style: none;
   }
 
@@ -378,7 +387,7 @@ button {
     font-size: 20px;
     font-weight: 400;
     max-width: 500px;
-    color: #ebebff;
+    color: rgba(255, 255, 255, 0.845);
     transition: all 0.5s;
   }
 
@@ -422,7 +431,7 @@ button {
   }
 
   .submit {
-    color: #6070ff;
+    color: #6070ffec;
     padding: 12px 16px;
     background: #fff;
     border-radius: 8px;
@@ -793,7 +802,7 @@ button {
     font-size: 20px;
     font-weight: 400;
     max-width: 330px;
-    color: #ebebff;
+    color: rgba(255, 255, 255, 0.845);
   }
 
   form {

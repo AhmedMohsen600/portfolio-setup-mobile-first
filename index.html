@@ -17,7 +17,11 @@
   <body>
     <header>
       <nav class="header">
-        <img class="logo" src="./imgs/logo.png" alt="logo" />
+        <img
+          class="logo"
+          src="./imgs/logo.png"
+          alt="this is the logo of my webpage"
+        />
         <ul class="links-holder">
           <li class="link"><a href="#">Portoflio</a></li>
           <li class="link"><a href="#">About</a></li>
@@ -73,13 +77,21 @@
       <section class="works-section">
         <div class="tonic order1">
           <div class="image">
-            <img class="mobile-img" src="./imgs/tonic2.png" alt="work-img" />
-            <img class="desktop-img" src="./imgs/order3.png" alt="work-img" />
+            <img
+              class="mobile-img"
+              src="./imgs/tonic2.png"
+              alt="screen image for my project for mobile view"
+            />
+            <img
+              class="desktop-img"
+              src="./imgs/order3.png"
+              alt="this is an screen image for desktop view  and for my tonic2 project"
+            />
           </div>
           <div class="group">
             <h2>Tonic</h2>
             <div class="tags-holder">
-              <h4 class="canopy">canopy</h4>
+              <h3 class="canopy">canopy</h3>
               <div class="dot"></div>
               <span class="tag">Back End Dev</span>
               <div class="dot"></div>
@@ -99,13 +111,21 @@
         </div>
         <div class="tonic order2">
           <div class="image">
-            <img class="mobile-img" src="./imgs/tonic3.png" alt="work-img" />
-            <img class="desktop-img" src="./imgs/order4.png" alt="work-img" />
+            <img
+              class="mobile-img"
+              src="./imgs/tonic3.png"
+              alt="this is an screen image for my projec for mobile view"
+            />
+            <img
+              class="desktop-img"
+              src="./imgs/order4.png"
+              alt="this is an screen image for my tonic project for desktop view"
+            />
           </div>
           <div class="group">
             <h2>Multi-Post Stories</h2>
             <div class="tags-holder">
-              <h4 class="canopy">canopy</h4>
+              <h3 class="canopy">canopy</h3>
               <div class="dot"></div>
               <span class="tag">Back End Dev</span>
               <div class="dot"></div>
@@ -126,13 +146,21 @@
         </div>
         <div class="tonic order3">
           <div class="image">
-            <img class="mobile-img" src="./imgs/woman.png" alt="work-img" />
-            <img class="desktop-img" src="./imgs/order1.png" alt="work-img" />
+            <img
+              class="mobile-img"
+              src="./imgs/woman.png"
+              alt="this is an screen image for my avacode project"
+            />
+            <img
+              class="desktop-img"
+              src="./imgs/order1.png"
+              alt="this is an screen image for my avalabilty project"
+            />
           </div>
           <div class="group">
             <h2>Tonic</h2>
             <div class="tags-holder">
-              <h4 class="canopy">canopy</h4>
+              <h3 class="canopy">canopy</h3>
               <div class="dot"></div>
               <span class="tag">Back End Dev</span>
               <div class="dot"></div>
@@ -153,13 +181,21 @@
         </div>
         <div class="tonic order4">
           <div class="image">
-            <img class="mobile-img" src="./imgs/tonic4.png" alt="work-img" />
-            <img class="desktop-img" src="./imgs/order2.png" alt="work-img" />
+            <img
+              class="mobile-img"
+              src="./imgs/tonic4.png"
+              alt="this screen for my project for mobile view"
+            />
+            <img
+              class="desktop-img"
+              src="./imgs/order2.png"
+              alt="this is screen for my project for desktop view"
+            />
           </div>
           <div class="group">
             <h2>Multi-Post Stories</h2>
             <div class="tags-holder">
-              <h4 class="canopy">canopy</h4>
+              <h3 class="canopy">canopy</h3>
               <div class="dot"></div>
               <span class="tag">Back End Dev</span>
               <div class="dot"></div>
@@ -219,38 +255,38 @@
         </div>
         <section class="main-skills">
           <div class="languages">
-            <h4>languages</h4>
+            <h3>languages</h3>
             <img
               class="arrow"
               width="14px"
               height="8px"
               src="./imgs/arrow-down.png"
-              alt="arrow"
+              alt=""
             />
           </div>
           <ul class="lang-group">
             <li class="lang">
               <img src="./imgs/javascript.png" alt="javaScript" />
-              <h6>javaScript</h6>
+              <h4>javaScript</h4>
             </li>
             <li class="lang">
               <img src="./imgs/html.png" alt="html" />
-              <h6>HTML</h6>
+              <h4>HTML</h4>
             </li>
             <li class="lang">
               <img src="./imgs/css.png" alt="css" />
-              <h6>CSS</h6>
+              <h4>CSS</h4>
             </li>
           </ul>
 
           <ul>
             <li class="framewroks">
               <h4>frameworks</h4>
-              <img class="arrow" src="./imgs/arrow-left.png" alt="arrow" />
+              <img class="arrow" src="./imgs/arrow-left.png" alt="" />
             </li>
             <li class="some-skill">
               <h4>skills</h4>
-              <img class="arrow" src="./imgs/arrow-left.png" alt="arrow" />
+              <img class="arrow" src="./imgs/arrow-left.png" alt="" />
             </li>
           </ul>
         </section>
@@ -266,32 +302,38 @@
             </p>
           </div>
           <form action="https://formspree.io/f/xqkjqjeq" method="POST">
-            <label>
+            <div class="input-holder">
+              <label for="name"> Write your name </label>
               <input
                 type="text"
                 placeholder="Write your name"
                 required
                 maxlength="30"
                 name="name"
+                id="name"
               />
-            </label>
-            <label>
+            </div>
+            <div class="input-holder">
+              <label for="email"> Write your email </label>
               <input
+                id="email"
                 type="email"
                 placeholder="Write your email here"
                 required
                 name="email"
               />
-            </label>
-            <label>
+            </div>
+            <div class="input-holder">
+              <label for="message"> Write your message </label>
               <textarea
                 placeholder="Write your message here"
                 rows="10"
+                id="message"
                 required
                 name="message"
                 maxlength="500"
               ></textarea>
-            </label>
+            </div>
             <button class="submit" type="submit">Get It Touch</button>
             <div class="black-line"></div>
           </form>
