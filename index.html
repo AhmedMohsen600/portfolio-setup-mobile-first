@@ -28,10 +28,18 @@
           <li class="link"><a href="#">Contact</a></li>
         </ul>
         <div class="burger-menu">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"> </span>
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"> </span>
         </div>
+         <menu class="nav-open">
+           <div>
+             <a class="link" href="#portfolio">Portoflio</a>
+             <a class="link" href="#about">About</a>
+             <a class="link" href="#contact">contact</a>
+           </div>
+          </div>
+        </menu>
       </nav>
     </header>
     <main>
@@ -74,8 +82,8 @@
           </ul>
         </div>
       </section>
-      <section class="works-section">
-        <div class="tonic order1">
+      <section class="works-section" id="portfolio">
+        <div tabindex="3" class="tonic order1">
           <div class="image">
             <img
               class="mobile-img"
@@ -110,7 +118,7 @@
             <button class="view-project">See project</button>
           </div>
         </div>
-        <div class="tonic order2">
+        <div tabindex="2" class="tonic order2">
           <div class="image">
             <img
               tabindex="0"
@@ -147,7 +155,7 @@
             <button class="view-project">See project</button>
           </div>
         </div>
-        <div class="tonic order3">
+        <div tabindex="1" class="tonic order3">
           <div class="image">
             <img
               class="mobile-img"
@@ -219,7 +227,7 @@
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="info">
           <h2 tabindex="0" class="about-self">About Myself</h2>
           <p tabindex="0" class="about-me">
@@ -307,7 +315,7 @@
         </section>
       </section>
       <section class="footer-holder">
-        <section class="contact-form">
+        <section class="contact-form" id="contact">
           <div class="contact-group">
             <h2 tabindex="0" class="contact-title">Contact me</h2>
             <p tabindex="0" class="contact-desc">
@@ -355,5 +363,6 @@
         </section>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
