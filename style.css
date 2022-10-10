@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+ scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -12,7 +16,7 @@ body {
   justify-content: center;
   min-height: 90vh;
   background: #e5e5e5;
-}
+  }
 
 a {
   text-decoration: none;
