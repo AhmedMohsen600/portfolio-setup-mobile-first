@@ -5,7 +5,7 @@
 }
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
   justify-content: center;
   min-height: 90vh;
   background: #e5e5e5;
-  }
+}
 
 a {
   text-decoration: none;
