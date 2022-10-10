@@ -18,6 +18,10 @@ body {
   background: #e5e5e5;
 }
 
+main {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -77,6 +81,10 @@ button {
   }
 
   .burger-menu {
+    display: none;
+  }
+
+  .nav-open {
     display: none;
   }
 
@@ -476,11 +484,10 @@ button {
 @media (max-width: 768px) {
   /* navbar */
   header {
-    width: 375px;
+    width: 100%;
     min-height: 7vh;
     display: flex;
     background-color: #fff;
-    margin-top: 50px;
   }
 
   nav {
@@ -522,9 +529,8 @@ button {
     align-items: flex-start;
     gap: 12px;
     background: url('./imgs/background.png') center / contain no-repeat;
-    width: 375px;
     height: 596px;
-    padding: 16px;
+    padding: 16px 24px;
     border: 1px solid #dfe1e6;
     border-bottom-left-radius: 70px;
     background-color: #fff;
@@ -537,6 +543,7 @@ button {
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
+    width: 100%;
   }
 
   h1 {
@@ -581,7 +588,7 @@ button {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    width: 327px;
+    width: 95%;
   }
 
   /* title style */
@@ -594,10 +601,12 @@ button {
 
   /* image styling */
   .image {
-    width: 295px;
-    height: 220px;
+    width: 90%;
     border-radius: 8px;
     transform: scale(1.1);
+    margin: auto;
+    padding: 8px;
+    margin-bottom: 20px;
   }
 
   img {
@@ -608,6 +617,13 @@ button {
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .lang-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .tags-holder {
@@ -699,12 +715,15 @@ button {
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
-    width: 375px;
     padding: 16px;
     padding-top: 114px;
     border: 1px solid #dfe1e6;
     border-top-left-radius: 70px;
     background-color: #fff;
+  }
+
+  .image img {
+    width: 100%;
   }
 
   .about-self {
@@ -715,6 +734,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 36px;
+    width: 100%;
   }
 
   .languages,
@@ -725,13 +745,8 @@ button {
     align-items: center;
   }
 
-  .lang-group {
-    float: right;
-    margin-right: 12px;
-  }
-
   .lang {
-    width: 303px;
+    width: 90%;
     height: 66.72px;
     background: #f7f7f9;
     border-radius: 8px;
@@ -781,7 +796,6 @@ button {
     flex-direction: column;
     background: url('/imgs/contact-bg.png') 101% / contain no-repeat #6070ff;
     gap: 70px;
-    width: 375px;
     padding: 16px;
     border: 1px solid transparent;
     border-top-left-radius: 90px;
@@ -908,7 +922,7 @@ button {
   .nav-open div {
     display: flex;
     flex-direction: column;
-    align-self: center;
+
     height: 100%;
     gap: 40px;
   }
@@ -954,5 +968,11 @@ button {
     margin: 0;
     height: 100%;
     overflow: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  .lang {
+    width: 100%;
   }
 }
