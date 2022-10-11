@@ -944,7 +944,6 @@ button {
   }
 
   .rotate .line2 {
-    /* opacity: 0; */
     transform: rotate(-135deg);
     transition: all 0.5s;
     z-index: 100000;
