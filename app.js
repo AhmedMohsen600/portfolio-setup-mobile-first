@@ -16,7 +16,7 @@ const modalInfo = document.querySelector('.modal-info');
 const modalDesc = modalInfo.querySelector('p');
 const modalSkills = document.querySelector('.modal-skills');
 const children = modalSkills.querySelectorAll('li');
-const submit = document.querySelector('.submit');
+const submit = document.querySelector('form');
 const emailInput = document.getElementById('email');
 const resultMsg = document.querySelector('.msg');
 const handelNavClick = () => {
@@ -231,13 +231,11 @@ closeImg.addEventListener('click', function (e) {
 });
 
 // handel form validation
-submit.addEventListener('click', function () {
+submit.addEventListener('submit', function (e) {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
     resultMsg.textContent = 'Email must be in lower case';
-    resultMsg.style.color = '#000';
+    resultMsg.style.color = 'red';
     return false;
-  } else {
-    resultMsg.style.color = 'rgb(255,255,255)';
-    resultMsg.textContent = 'Valid email';
   }
 });
