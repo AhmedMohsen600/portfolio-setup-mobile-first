@@ -50,6 +50,139 @@ button {
   color: rgba(255, 255, 255, 0.845);
 }
 
+.overlay {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: all 0.4s;
+}
+
+.active-modal {
+  transform: translateX(0);
+  pointer-events: all;
+  opacity: 1;
+  border-radius: 0;
+}
+
+.modal {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 85%;
+  max-height: 770px;
+  overflow-y: auto;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.holding {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.headline h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #091e42;
+}
+
+.headline img {
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-info {
+  display: flex;
+  gap: 24px;
+}
+
+.modal-desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  flex: 3.1;
+}
+
+.modal-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.space {
+  width: 100%;
+  border: 1px solid #ebecf0;
+  height: 1px;
+  background-color: #ebecf0;
+}
+
+.modal-skills {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btns-group {
+  display: flex;
+  gap: 12px;
+}
+
+.see-live,
+.source {
+  padding: 8px;
+  border: 1px solid #6070ff;
+  align-self: flex-start;
+  color: #396df2;
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  width: 100%;
+  gap: 3px;
+}
+
+.modal-noscroll {
+  overflow: hidden;
+}
+
 /* desktop version  */
 @media (min-width: 768px) {
   /* nav style */
