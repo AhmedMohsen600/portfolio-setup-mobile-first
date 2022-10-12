@@ -81,8 +81,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  width: 85%;
-  max-height: 770px;
+  width: 70%;
+  max-height: 750px;
   overflow-y: auto;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
@@ -114,7 +114,7 @@ button {
 }
 
 .modal-img {
-  width: 100%;
+  object-fit: contain;
 }
 
 .modal-img img {
