@@ -1100,6 +1100,10 @@ button {
     height: 100%;
     overflow: hidden;
   }
+
+  .modal-info {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 500px) {
