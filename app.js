@@ -16,7 +16,9 @@ const modalInfo = document.querySelector('.modal-info');
 const modalDesc = modalInfo.querySelector('p');
 const modalSkills = document.querySelector('.modal-skills');
 const children = modalSkills.querySelectorAll('li');
-
+const submit = document.querySelector('.submit');
+const emailInput = document.getElementById('email');
+const resultMsg = document.querySelector('.msg');
 const handelNavClick = () => {
   nav.classList.toggle('toggle');
   html.classList.toggle('no-scroll');
@@ -226,4 +228,16 @@ closeImg.addEventListener('click', function (e) {
   overlay.classList.remove('active-modal');
   html.classList.remove('modal-noscroll');
   document.location.reload();
+});
+
+// handel form validation
+submit.addEventListener('click', function () {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    resultMsg.textContent = 'Email must be in lower case';
+    resultMsg.style.color = '#000';
+    return false;
+  } else {
+    resultMsg.style.color = 'rgb(255,255,255)';
+    resultMsg.textContent = 'Valid email';
+  }
 });
