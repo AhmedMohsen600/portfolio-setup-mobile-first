@@ -240,20 +240,40 @@ submit.addEventListener('submit', function (e) {
     resultMsg.textContent = 'Email must be in lower case';
     resultMsg.style.color = 'red';
     return false;
-  } else {
-    const formData = {
-      name: nameInput.value,
-      email: emailInput.value,
-      message: msgInput.value,
-    };
-    localStorage.setItem('formData', JSON.stringify(formData));
   }
+});
+const { inputName, email, message } = JSON.parse(
+  localStorage.getItem('formData')
+);
+
+const formData = {
+  inputName,
+  email,
+  message,
+};
+
+// localstorage part
+
+nameInput.addEventListener('keyup', (e) => {
+  formData.inputName = e.target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+emailInput.addEventListener('keyup', (e) => {
+  formData.email = e.target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+msgInput.addEventListener('keyup', (e) => {
+  formData.message = e.target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
-  nameInput.value = name;
+  const { inputName, email, message } = JSON.parse(
+    localStorage.getItem('formData')
+  );
+  nameInput.value = inputName;
   emailInput.value = email;
   msgInput.value = message;
 });
-// localstorage
