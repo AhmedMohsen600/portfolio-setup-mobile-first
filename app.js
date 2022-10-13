@@ -21,7 +21,7 @@ const resultMsg = document.querySelector('.msg');
 const emailInput = document.getElementById('email');
 const nameInput = document.getElementById('name');
 const msgInput = document.getElementById('message');
-
+const kokos = document.querySelectorAll('.koko');
 const handelNavClick = () => {
   nav.classList.toggle('toggle');
   html.classList.toggle('no-scroll');
@@ -242,6 +242,7 @@ submit.addEventListener('submit', function (e) {
     return false;
   }
 });
+
 const { inputName, email, message } = JSON.parse(
   localStorage.getItem('formData')
 );
@@ -254,19 +255,12 @@ const formData = {
 
 // localstorage part
 
-nameInput.addEventListener('keyup', (e) => {
-  formData.inputName = e.target.value;
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
-
-emailInput.addEventListener('keyup', (e) => {
-  formData.email = e.target.value;
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
-
-msgInput.addEventListener('keyup', (e) => {
-  formData.message = e.target.value;
-  localStorage.setItem('formData', JSON.stringify(formData));
+kokos.forEach((kok) => {
+  kok.addEventListener('keyup', function (e) {
+    let { name, value } = e.target;
+    formData[name] = value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
