@@ -21,7 +21,7 @@ const resultMsg = document.querySelector('.msg');
 const emailInput = document.getElementById('email');
 const nameInput = document.getElementById('name');
 const msgInput = document.getElementById('message');
-const kokos = document.querySelectorAll('.koko');
+const inputs = document.querySelectorAll('.koko');
 const handelNavClick = () => {
   nav.classList.toggle('toggle');
   html.classList.toggle('no-scroll');
@@ -255,8 +255,8 @@ const formData = {
 
 // localstorage part
 
-kokos.forEach((kok) => {
-  kok.addEventListener('keyup', function (e) {
+inputs.forEach((inp) => {
+  inp.addEventListener('keyup', function (e) {
     let { name, value } = e.target;
     formData[name] = value;
     localStorage.setItem('formData', JSON.stringify(formData));
