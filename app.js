@@ -17,8 +17,11 @@ const modalDesc = modalInfo.querySelector('p');
 const modalSkills = document.querySelector('.modal-skills');
 const children = modalSkills.querySelectorAll('li');
 const submit = document.querySelector('form');
-const emailInput = document.getElementById('email');
 const resultMsg = document.querySelector('.msg');
+const emailInput = document.getElementById('email');
+const nameInput = document.getElementById('name');
+const msgInput = document.getElementById('message');
+
 const handelNavClick = () => {
   nav.classList.toggle('toggle');
   html.classList.toggle('no-scroll');
@@ -237,5 +240,20 @@ submit.addEventListener('submit', function (e) {
     resultMsg.textContent = 'Email must be in lower case';
     resultMsg.style.color = 'red';
     return false;
+  } else {
+    const formData = {
+      name: nameInput.value,
+      email: emailInput.value,
+      message: msgInput.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  nameInput.value = name;
+  emailInput.value = email;
+  msgInput.value = message;
+});
+// localstorage
