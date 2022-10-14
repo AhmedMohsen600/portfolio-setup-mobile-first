@@ -17,8 +17,11 @@ const modalDesc = modalInfo.querySelector('p');
 const modalSkills = document.querySelector('.modal-skills');
 const children = modalSkills.querySelectorAll('li');
 const submit = document.querySelector('form');
-const emailInput = document.getElementById('email');
 const resultMsg = document.querySelector('.msg');
+const emailInput = document.getElementById('email');
+const nameInput = document.getElementById('name');
+const msgInput = document.getElementById('message');
+const inputs = document.querySelectorAll('.koko');
 const handelNavClick = () => {
   nav.classList.toggle('toggle');
   html.classList.toggle('no-scroll');
@@ -238,4 +241,33 @@ submit.addEventListener('submit', function (e) {
     resultMsg.style.color = 'red';
     return false;
   }
+});
+
+const { inputName, email, message } = JSON.parse(
+  localStorage.getItem('formData')
+);
+
+const formData = {
+  inputName,
+  email,
+  message,
+};
+
+// localstorage part
+
+inputs.forEach((inp) => {
+  inp.addEventListener('keyup', function (e) {
+    let { name, value } = e.target;
+    formData[name] = value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const { inputName, email, message } = JSON.parse(
+    localStorage.getItem('formData')
+  );
+  nameInput.value = inputName;
+  emailInput.value = email;
+  msgInput.value = message;
 });
